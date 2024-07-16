@@ -27,3 +27,4 @@ Click on `New repository secret` and add each of the following secrets:
   - **Value:** Your AWS Account ID.
 - **Name:** `IAM_ROLE_NAME`
   - **Value:** The name of the IAM role with permissions to run Lambda functions.
+
