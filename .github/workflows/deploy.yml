@@ -16,7 +16,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '14'
+        node-version: '20'
 
     - name: Install Dependencies
       run: npm install
@@ -46,5 +46,4 @@ jobs:
           --runtime nodejs14.x \
           --role arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/${{ secrets.IAM_ROLE_NAME }} \
         || aws lambda update-function-code \
-          --function-name ${{ secrets.LAMBDA_FUNCTION_NAME }} \
-          --zip-file fileb://function.zip
+          --function-name ${{ secrets.LAMBDA
