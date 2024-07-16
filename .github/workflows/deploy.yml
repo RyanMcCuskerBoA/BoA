@@ -43,7 +43,7 @@ jobs:
           --function-name ${{ secrets.LAMBDA_FUNCTION_NAME }} \
           --zip-file fileb://function.zip \
           --handler index.handler \
-          --runtime nodejs14.x \
+          --runtime nodejs20.x \
           --role arn:aws:iam::${{ secrets.AWS_ACCOUNT_ID }}:role/${{ secrets.IAM_ROLE_NAME }} \
         || aws lambda update-function-code \
           --function-name ${{ secrets.LAMBDA_FUNCTION_NAME }} \
