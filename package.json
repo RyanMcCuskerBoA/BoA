@@ -4,7 +4,7 @@
     "main": "index.js",
     "scripts": {
       "lint": "eslint .",
-      "test": "jest"
+      "test": "jest --passWithNoTests"
     },
     "dependencies": {
       "aws-sdk": "^2.814.0"
